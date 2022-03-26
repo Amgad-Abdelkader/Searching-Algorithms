@@ -1,0 +1,11 @@
+def linear_search(matrix, value):
+    """This code searches for an input value within a matrix
+    input: 
+        matrix: the matrix desired to be sorted
+        value: the elemant that the algorithm searches for within the algorithm
+    output: the elemnent index"""
+    n = len(matrix)
+    for i in range(n):
+        if matrix[i] == value:
+            break
+    return i
