@@ -1,0 +1,18 @@
+def bisectin_search(matrix, value):
+    """This code searches for an input value within a matrix
+    input: 
+        matrix: the sorted matrix desired to be sorted
+        value: the elemant that the algorithm searches for within the algorithm
+    output: the elemnent index"""
+    
+    initial = 0
+    n = len(matrix)
+    while initial < n:
+        checker = (initial + n) // 2
+        if matrix(checker) == value:
+            break
+        elif matrix(checker) < value:
+            initial = checker + 1
+        else:
+            n = checker - 1
+    return checker
